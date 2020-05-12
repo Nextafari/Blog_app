@@ -1,0 +1,12 @@
+{% extends 'post_page_modifier.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block post_content %}
+    
+    <h2>{{ post.title }}</h2>
+
+    <div>
+        {{ post.content|linebreaks }}
+    </div>
+{% endblock %}

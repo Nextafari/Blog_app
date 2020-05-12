@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width={device-width}, initial-scale=1.0">
+	<title>{% block title %}{{post.title}}{% endblock %}</title>"
+</head>
+<body>
+	{% block content %}
+		{% for post in posts %}
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+					<div class="card-header">
+						{% load static %}
+						<img src="{% get_media_prefix %}{{ post.image }}" class="card-img-top">
+						<h3><a href="/post/{{ post.slug }}">{{ post.title }}</a></h3> 
+						<p>{{ post.summary }}</p>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
+	{% endblock %}
+</body>
+</html>
