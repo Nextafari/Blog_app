@@ -12,7 +12,7 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to='img', default='placeholder.png')
 		    
-    def __unicode__(self):
+    def __str__(self):
         return u'%s'% self.title        #this makes the characters in the post show
 
     class Meta:
