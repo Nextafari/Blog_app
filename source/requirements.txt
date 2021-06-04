@@ -1,10 +1,12 @@
-asgiref==3.2.10
-beautifulsoup4==4.9.1
-Django==3.1
+-i https://pypi.org/simple/
+asgiref==3.3.4
+beautifulsoup4==4.9.3
 django-bootstrap4==2.2.0
-importlib-metadata==1.7.0
-Pillow==7.2.0
-pytz==2020.1
-soupsieve==2.0.1
-sqlparse==0.3.1
-zipp==3.1.0
+django==3.1.9
+importlib-metadata==1.7.0 ; python_version < '3.8'
+pillow==7.2.0
+pytz==2021.1
+soupsieve==2.2.1 ; python_version >= '3.0'
+sqlparse==0.4.1
+typing-extensions==3.10.0.0 ; python_version < '3.8'
+zipp==3.4.1
